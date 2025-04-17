@@ -1,0 +1,147 @@
+@import 'fonts';
+
+html {
+    box-sizing: border-box;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "TTLakes-Regular", "Arial";
+}
+
+.body {
+    background-color: #F8F8F8;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.header__inner {
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .header__inner{
+        .call,
+        .chat,
+        .profile {
+            display: inline;
+        } 
+    }
+    .header__inner {
+        justify-content: space-around;
+    }
+    .logo {
+        margin-right: 250px;
+    }
+    .hero__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        column-gap: 30px;
+    }
+    
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    border: none;
+    cursor: pointer;
+}
+
+.call,
+.chat,
+.profile {
+    display: none;
+}
+
+.hero__title{
+    padding: 15px;
+}
+
+.hero__list {
+    padding: 15px;
+}
+
+.hero__link {
+    text-decoration: none;
+    color: #7E7E82;   
+}
+
+.hero__link:focus {
+    outline: 2px solid #B8FFEC;;
+}
+
+.hero__item {
+    list-style-type: none;
+}
+
+.hero__list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero__description {
+    font-size: 14px;
+    color: #1B1C21;
+    padding: 10px;
+}
+
+.hero__button{
+    color: #1B1C21;
+    background-color: #F8F8F8;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+.hero__button {
+    display: none;
+}
+
+@media (min-width: 1120px){
+    .header{
+        display: none;
+    }
+    .hero__section{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hero__title {
+        display: inline-block;
+        margin: 0;
+    }
+    
+    .hero__button {
+        display: inline-block;   
+    }
+    
+    .hero__text-btn,
+    .button status__btn{
+        display: inline-block;
+    }
+}
+
+summary {
+    display: block;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
